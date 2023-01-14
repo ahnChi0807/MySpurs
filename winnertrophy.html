@@ -64,15 +64,20 @@
                 text-align: center;
                 font-size: 40px;
             }
-            .win {
-                width: 400px;
-                height: 400px;
-                margin-left: 250px;
-                margin-top: 50px;
+            #win {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
             }
             .trophy {
                 color: #e44611;
                 font-size: 20px;
+                margin-bottom: 50px;
+            }
+            .winimg {
+                width: 400px;
+                height: 400px;
+                margin-left: 230px;
             }
         </style>
     </head>
@@ -95,9 +100,9 @@
             <h2 style="border-bottom: 12px solid #7f771c; padding: 0 0 0 0.2em">2000~2022 우승 경력</h2>
         </div>
         <p class="trophy"><strong>2007~2008 EFL컵 우승</strong></p>
-        <div>
-            <img class="win" src="images/winner a trophy.jpg" />
-            <img class="win" src="images/anymore.jpg" />
+        <div id="win">
+            <img class="winimg" src="images/winner a trophy.jpg" />
+            <img class="winimg" src="images/anymore.jpg" />
         </div>
     </body>
 </html>
